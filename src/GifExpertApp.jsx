@@ -10,9 +10,8 @@ const GifExpertApp = () => {
     <>
       {/* title */}
       <h1>GIF Expert App</h1>
-      {/* search input */}
-      <AddCategory />
-      <button onClick={onAddCategory}>Add Category</button>
+      {/* Functions can be passed as custom properties */}
+      <AddCategory setCategories={setCategories} />
       {/* GIFS container */}
       <ol>
         {categories.map((category) => {
