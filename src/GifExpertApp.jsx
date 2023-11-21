@@ -1,4 +1,6 @@
+import React, { useState } from "react";
 const GifExpertApp = () => {
+  const [categories, setCategories] = useState(["One Punch", "Marvel"]);
   return (
     <>
       {/* title */}
