@@ -11,13 +11,7 @@ const GifExpertApp = () => {
       <h1>GIF Expert App</h1>
       {/* search input */}
       {/* GIFS container */}
-      <button
-        onClick={() => {
-          onAddCategory();
-        }}
-      >
-        Add category
-      </button>
+      <button onClick={onAddCategory}>Add category</button>
       <ol>
         {categories.map((category) => {
           return <li key={category}>{category}</li>;
