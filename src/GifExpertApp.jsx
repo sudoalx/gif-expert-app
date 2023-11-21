@@ -7,6 +7,11 @@ const GifExpertApp = () => {
       <h1>GIF Expert App</h1>
       {/* search input */}
       {/* GIFS container */}
+      <ol>
+        {categories.map((category) => {
+          return <li key={category}>{category}</li>;
+        })}
+      </ol>
       {/* GIF Items */}
     </>
   );
