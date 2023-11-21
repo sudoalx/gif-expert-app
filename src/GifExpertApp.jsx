@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import AddCategory from "./components/AddCategory";
 const GifExpertApp = () => {
-  const [categories, setCategories] = useState(["One Punch", "Marvel"]);
-  const onAddCategory = () => {
-    // TODO: Add category when the button is pressed
-    setCategories(["Android", ...categories]);
-  };
+  const [categories, setCategories] = useState(["Computers", "Marvel"]);
   return (
     <>
       {/* title */}
