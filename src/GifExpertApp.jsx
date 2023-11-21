@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import AddCategory from "./components/AddCategory";
 const GifExpertApp = () => {
-  const [categories, setCategories] = useState(["Computers", "Marvel"]);
+  const [categories, setCategories] = useState([]);
+  const handleAddCategory = (newCategory) => {
+    setCategories([newCategory, ...categories]);
+  };
   return (
     <>
-      {/* title */}
       <h1>GIF Expert App</h1>
-      {/* Functions can be passed as custom properties */}
-      <AddCategory setCategories={setCategories} />
+      <AddCategory onNewVal={(value) => handleAddCategory(value)} />
       {/* GIFS container */}
       <ol>
         {categories.map((category) => {

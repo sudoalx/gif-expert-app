@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const AddCategory = ({ setCategories }) => {
+const AddCategory = ({ onNewVal }) => {
   const [inputValue, setInputValue] = useState("");
   const onInputChange = ({ target }) => {
     // destructuring the event object to get the target property
@@ -8,11 +8,11 @@ const AddCategory = ({ setCategories }) => {
   };
   const onSubmit = (e) => {
     e.preventDefault(); // prevents the page from refreshing
-    handleAddCategory();
+    addCategory();
   };
-  const handleAddCategory = () => {
+  const addCategory = () => {
     if (inputValue.trim().length <= 1) return;
-    setCategories((categories) => [inputValue, ...categories]);
+    onNewVal(inputValue.trim()); // passing the value to the parent component (GifExpertApp.jsx) through a custom property
     setInputValue("");
   };
   return (
@@ -28,7 +28,7 @@ const AddCategory = ({ setCategories }) => {
           onChange={onInputChange} // the event is passed by default
         />
       </form>
-      <button onClick={handleAddCategory}>Add Category</button>
+      <button onClick={addCategory}>Add Category</button>
     </>
   );
 };
