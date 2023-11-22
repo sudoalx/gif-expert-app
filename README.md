@@ -8,7 +8,7 @@ I used [Giphy API](https://developers.giphy.com/docs/api#quick-start-guide) to g
 
 ## Demo
 
-You can see the demo [here](https://gif-expert-app.vercel.app/).
+You can see the demo [here](https://giphy-lookup-reactjs.netlify.app/).
 
 ## Installation
 
