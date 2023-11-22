@@ -29,13 +29,13 @@ h6 {
   color: var(--accent-color);
 }
 
-a {
+.links {
   color: var(--accent-color);
   text-decoration: none;
   border-bottom: 1px solid var(--accent-color);
 }
 
-a:hover {
+.links:hover {
   background-color: var(--accent-color);
   color: var(--main-text-color);
 }
@@ -181,4 +181,26 @@ button:hover {
 .card h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+}
+
+.text-muted {
+  color: #999;
+  font-size: 1rem;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+footer img {
+  width: 15rem;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer .links {
+  font-size: 1.2rem;
 }
