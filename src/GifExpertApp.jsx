@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import AddCategory from "./components/AddCategory";
-import GifGrid from "./components/GifGrid";
+import { AddCategory, GifGrid } from "./components/";
+
 const GifExpertApp = () => {
   const [categories, setCategories] = useState([]);
+
   const handleAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return;
     setCategories([newCategory, ...categories]);
   };
+
   return (
     <>
       <h1>GIF Expert App</h1>
