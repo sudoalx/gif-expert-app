@@ -20,7 +20,7 @@ const GifGrid = ({ category }) => {
       <h3>{category}</h3>
       <div className="card-grid">
         {images.map((image) => {
-          return <GifItem key={image.id} title={image.title} url={image.url} />;
+          return <GifItem key={image.id} {...images} />;
         })}
       </div>
     </div>
