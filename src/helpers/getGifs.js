@@ -10,6 +10,7 @@ const getGifs = async (category) => {
             url: images?.downsized_medium.url,
         };
     });
+    return gifs
 };
 
 export default getGifs;
