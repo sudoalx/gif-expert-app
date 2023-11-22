@@ -188,6 +188,34 @@ button:hover {
   font-size: 1rem;
 }
 
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+.loading-text {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+
+  text-align: center;
+  letter-spacing: 2px;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
 footer {
   margin-top: 20px;
   text-align: center;
