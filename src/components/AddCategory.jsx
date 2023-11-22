@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const AddCategory = ({ onNewVal }) => {
+export const AddCategory = ({ onNewVal }) => {
   const [inputValue, setInputValue] = useState("");
   const onInputChange = ({ target }) => {
     // destructuring the event object to get the target property
@@ -32,5 +32,3 @@ const AddCategory = ({ onNewVal }) => {
     </>
   );
 };
-
-export default AddCategory;
