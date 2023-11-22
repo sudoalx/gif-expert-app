@@ -1,9 +1,11 @@
 const GifItem = ({ title, url }) => {
   return (
-    <>
-      <h3>{title}</h3>
-      <img src={url} alt="" />
-    </>
+    <div className="card">
+      <div className="card-content">
+        <img src={url} alt={title} />
+        <p>{title}</p>
+      </div>
+    </div>
   );
 };
 
