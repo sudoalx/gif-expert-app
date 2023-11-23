@@ -21,6 +21,7 @@ export const AddCategory = ({ onNewVal }) => {
       <form
         className="centered-input"
         onSubmit={onSubmit} /** the event is passed by default */
+        aria-label="form"
       >
         <input
           type="text"
