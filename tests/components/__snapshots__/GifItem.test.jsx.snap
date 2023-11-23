@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test GifItem component should return a card with the Gif and title 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <div
+      class="card-content"
+    >
+      <img
+        alt="Marvel"
+        src="https://github.com/iron-man.gif"
+      />
+      <p>
+        Marvel
+      </p>
+    </div>
+  </div>
+</div>
+`;
