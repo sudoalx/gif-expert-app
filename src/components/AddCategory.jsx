@@ -30,7 +30,7 @@ export const AddCategory = ({ onNewVal }) => {
           onChange={onInputChange} // the event is passed by default
         />
       </form>
-      <button onClick={addCategory}>Add Category</button>
+      <button onClick={addCategory}>Search Category</button>
     </>
   );
 };
